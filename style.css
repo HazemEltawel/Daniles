@@ -1,0 +1,410 @@
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .nav-item a{
+    display: inline-block;
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item a{
+    color:white;
+  }
+  .navbar .navbar-nav .nav-item:hover a{
+    color: #c6c6ca;
+    transition: 0.5s;
+  }
+  .nav-item a::after{
+    content:"";
+    background: none 
+    0 0 transparent;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    right: 50%;
+    position: absolute;
+    background: white;
+    transition:  0.3s ease 0s ;
+  } 
+  .nav-item:hover ::after{
+    width: 100%;
+    right: 0%;
+    transition: 1s;
+  }
+  .rgba-img{
+    background-image: url(imgs/bg.jpg);
+    background-size:cover ;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+  }
+  .img-bg{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%; 
+    z-index: 11;
+    overflow: hidden;
+  }
+  .caption{
+    margin-top:220px;
+    text-align: center;
+  }
+  .img-bg .caption h1{
+    font-size: 50px;
+    font-weight: 700
+  }
+  .img-bg .caption h2 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+  #Home .rgba-img .img-bg h2::after  {
+    content: "|";
+    animation: h2 6s infinite;
+  color: white;
+  }
+  @keyframes h2 {
+  0%{content:"L|";}
+  2.44%{content:"La|";}
+  4.88%{content:"Lar|";}
+  7.32%{content:"Larr|";}
+  9.76%{content:"Larry|";}
+  Designer
+  12.2%{content:"Da|";}
+  14.63%{content:"Da|";}
+  17.07%{content:"Dan|";}
+  27.07%{content:"Dani|";}
+  30.24%{content:"Danie|";}
+  32.68%{content:"Daniel|";}
+  35.12%{content:"Daniels|";}
+  36.3%{content:"";}
+  37.12%{content:"D|";}
+  40%{content:"De|";}
+  42.44%{content:"Dev|";}
+  44.88%{content:"Deve|";}
+  47.32%{content:"Devel|";}
+  50%{content:"Develo|";}
+  52.44%{content:"Develop|";} 
+  54.88%{content:"Develope|";} 
+  57.32%{content:"Developer|";} 
+  59.76%{content:"";} 
+  62.2%{content:"D|";} 
+  64.63%{content:"De|";} 
+  67.7%{content:"Des|";} 
+  69.51%{content:"Desi|";} 
+  80.24%{content:"Desin|";} 
+  82.68%{content:"Desine|";} 
+  85.12%{content:"Desiner|";} 
+  }
+  #Home .rgba-img .img-bg .icons{
+   margin-top: 380px;
+  }
+  .img-bg  .icons .border-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-left: 13px;
+    padding-top: 6px;
+  }
+
+  .img-hero{
+   width: 100%;
+  }
+  .img-hero img{
+    width: 80%;
+  }
+  .container .row .col-md-6 .progress .progress-bar{
+    background-color: #1C1C1C;
+  }
+ .container .row .col-md-6 .progress{
+    height: 25px;
+  }
+  .container .row .col-md-6 .btn button{
+    border:1px solid black;
+    background-color:  #1C1C1C;
+    color: white;
+    width: 100%;
+    padding: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 6px;
+    transition: all 0.5s;
+  }
+  .container .row .col-md-6 .btn:hover button{
+    background-color: white;
+    color: #1C1C1C;
+  }
+  .container .row .col-md-6 .btn2 button{
+    border:1px solid black;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 6px;
+    transition: all 0.5s;
+    margin-left: 2px;
+    margin-top: 2px ;
+  }
+  .container .row .col-md-6 .btn2:hover button{
+    background-color: #1C1C1C;
+    color:white;
+  }
+  #Services{
+   padding-bottom: 80px;
+  }
+  #Services .Services h1{
+    color: #343434;
+    font-size: 50px;
+  }
+  #Services .Services h1::after{
+        content: "";
+        width: 100%;
+        height: 30px;
+        background-image: url(imgs/dots.png);
+        background-repeat: repeat;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+  }
+  #Services .container .row .icon-services{
+    background-color: #F7F7F7;
+    border-radius: 50%;
+    width: 67px;
+    height: 67px; 
+    position: relative;
+    left: 39%;
+    margin-block: 20px;
+  }
+  #Services .container .row .col-lg-4 .caption-Services{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  }
+  #Services .container .row .col-lg-4 .caption-Services:hover .icon-services{
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+  }
+  #Portfolio .nav .nav-link{
+    color:black;
+    transition: unset;
+    font-weight: 400;
+  }
+  #Portfolio .nav .nav-link.active{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius:45%;
+  }
+  #Portfolio .nav .nav-link.active:hover{
+    background-color:black;
+    transition: all 0.5s;
+  }
+  #Portfolio .container .cap-Portfolio h1{
+    color: #343434;
+    font-size: 50px;
+  }
+  #Portfolio .container .row .col-md-4 .imgs{
+    position: relative;
+  }
+  #Portfolio .container .row .col-md-4 .imgs:hover .Portfolio-lay{
+    position: absolute;
+    width: 97%;
+    height:96%;
+    background-color: white;
+    top: 1.5%;
+    left: 1.5%;
+    transition: all 0.6s;
+  }
+  #Portfolio .container .row .col-md-4 .imgs .Portfolio-lay .layer-content  p{
+    position: absolute;
+   margin-top: 100px;
+   margin-left: 136px;
+   font-weight: 700;
+   font-size: 13px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #Portfolio .container .row .col-md-4 .imgs .Portfolio-lay .layer-content .icon-lay{
+    background-color: black;
+    border:1px solid black;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top:140px;
+    margin-left:140px;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+  #Portfolio .container .row .col-md-4 .imgs .Portfolio-lay .icon-lay i{
+    padding-left: 6.5px;
+    color:white;
+  }
+  #Portfolio .container .row .col-md-4 .imgs .Portfolio-lay .icon-lay:hover{
+    background-color:white;
+  }
+  #Portfolio .container .row .col-md-4 .imgs .Portfolio-lay .icon-lay:hover i{
+    color: black;
+  }
+  #Portfolio .container .row .col-md-4 .imgs .Portfolio-lay .layer-content .icon-lay2{
+    background-color: black;
+    border:1px solid black;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top:140px;
+    margin-left:180px;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+  #Portfolio .container .row .col-md-4 .imgs .Portfolio-lay .icon-lay2 i{
+    padding-left: 2px;
+    color:white;
+  }
+  #Portfolio .container .row .col-md-4 .imgs .Portfolio-lay .icon-lay2:hover{
+    background-color:white;
+  }
+  #Portfolio .container .row .col-md-4 .imgs .Portfolio-lay .icon-lay2:hover i{
+    color: black;
+  }
+  #Clients .Testimonials .container h1{
+    color: #343434;
+    font-size: 50px;
+  }
+  #Clients .carousel .carousel-inner{
+    height: 360px;
+  }
+  #Clients .carousel-inner .carousel-item img{
+    width: 100px;
+    border-radius: 50%;
+  }
+  #Clients .carousel-inner .carousel-item .carousel-caption{
+    top: 120%;
+    /* margin: 49px; */
+    height: 100px;
+  }
+  #Clients  .carousel .carousel-indicators [data-bs-target="#carouselExampleCaptions"]{
+    width: 10px;
+  }
+  #Clients  .carousel .carousel-indicators [data-bs-target="#carouselExampleCaptions"].active{
+ width: 20px;
+ background-color: #1C1C1C;
+  }
+  #Clients .Testimonials{
+    padding-bottom: 50px;
+  }
+#deggre .deggre i {
+  color: #343434 ;
+}
+#deggre .deggre .caption-degre h3{
+   font-weight:700;
+}
+#iTeam .container .Our-Team h3 {
+  color: #343434;
+    font-size: 50px;
+}
+#iTeam .container .row .col-md-4 .lay-team .card .overlay {
+  width:345px;
+  height: 363px;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  text-align: center;
+  top: 5px;
+  left: 5px;
+ opacity: 0;
+ }
+ #iTeam .container .row .col-md-4 .lay-team:hover .overlay {
+  transition: 1s;
+    transform: rotatey(360deg) ;
+    opacity: 1;
+}
+ #iTeam .container .row .col-md-4 .lay-team .card .overlay .overlay-team{
+  padding: 2px;
+  margin-top: 100px;
+  padding-left: 39px;
+ }
+#iTeam .container .row .col-md-4 .card-body{
+ background-color: #5B5B5B;
+}
+#iTeam .container .row .col-md-4 .card-body h5{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#iTeam .container .row .col-md-4 .card-body h4{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serifx;
+}
+#iTeam .container .row .col-md-4 .lay-team .card .overlay-team{
+  height: 0;
+}
+#iTeam .container .row .col-md-4 .lay-team .card .overlay-team a{
+ color: wheat;
+}
+#iTeam .container .row .col-md-4 .lay-team .card .overlay-team i{
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding-left: 3.6px;
+  padding-top: 5px;
+}
+#iTeam .container .row .col-md-4 .lay-team .card .overlay-team:hover i{
+  background-color: white;
+ color:black;
+ transition: all 0.5s;
+}
+#iTeam .container .row .col-md-4 .lay-team .card:hover img{
+  transform:scale(1.2);
+  transition: all 1s;
+}
+#contact .caption-contact h3{
+  color: #343434;
+    font-size: 50px;
+}
+#contact .container .row .col-md-4 .icon-contact i{
+background-color:#F4F4F4;
+width: 55px;
+height: 55px;
+padding-top: 14px;
+border-radius: 50%;
+margin: 13px;
+transition: all 0.5s;
+
+}
+#contact .container .row .col-md-4 .icon-contact:hover i{
+  color: white;
+  background-color: black;
+}
+#contact .container .row .col-md-12 .btn-content{
+  width: 0;
+}
+#contact .container .row .col-md-12 .btn-content :nth-child(1){
+border:0.7px solid black;
+    background-color:#1C1C1C ;
+    color:white;
+  margin-left: 25px;
+}
+#contact .container .row .col-md-12 .btn-content:hover button{
+ background-color:white;
+ color:black;
+ transition: all 0.5s;
+}
+.up-grop-home{
+      left: 95%;
+}
+.up-home{
+    background-color:#1C1C1C;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+}
+.up-home a{
+    padding-left: 17px;
+    color: white;
+}
+.up-grop-home:hover .up-home {
+    background-color: white;
+    transition: all 0.5s;
+}
+.up-grop-home:hover a{
+    color: black;
+    transition: all 0.5s;
+}
